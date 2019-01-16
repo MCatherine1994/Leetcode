@@ -1,0 +1,4 @@
+Question:
+Given an array of integers, find two numbers such that they add up to a specific target number.  
+Return two indices, where index1 must be less than index2 and they are not zero-based. 
+Assume there is only one solution.
