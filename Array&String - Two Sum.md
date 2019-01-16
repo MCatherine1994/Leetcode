@@ -1,9 +1,10 @@
-Question:
+#### **Question:**  
 Given an array of integers, find two numbers such that they add up to a specific target number.  
-Return two indices, where index1 must be less than index2 and they are not zero-based. 
-Assume there is only one solution.
+Return two indices, where index1 must be less than index2 and they are not zero-based.   
+Assume there is only one solution.  
 
-Solution in Java:
+#### **Solution in Java:**  
+```
 public int[] twoSum(int[] numbers, int target) {
   Map<Integer, Integer> map = new HashMap<>();
   for(int i = 0; i < numbers.length - 1; i++) {
@@ -15,11 +16,13 @@ public int[] twoSum(int[] numbers, int target) {
   }
   throw new IllegalArgumentException("No two sum solution");
 }
+```
 
-Question:
-If the input array is sorted in ascending order?
+#### **Question:**  
+If the input array is sorted in ascending order?  
 
-Solution:
+#### **Solution:**  
+```
 public int[] twoSum(int[] numbers, int target) {
   int i = 0, j = numbers.length - 1;
   while(i < j) {
@@ -34,3 +37,4 @@ public int[] twoSum(int[] numbers, int target) {
   }
   throw new IllegalArgumentException("No two sum solution");
 }
+```
