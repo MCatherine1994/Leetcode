@@ -38,3 +38,10 @@ public int[] twoSum(int[] numbers, int target) {
   throw new IllegalArgumentException("No two sum solution");
 }
 ```
+
+#### **Question:**  
+Design the data structure, a twoSum class.
+
+#### **Solution:**  
+```
+```
