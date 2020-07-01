@@ -7,7 +7,7 @@
 * Listnode
 
 #### **Knowledge example:**
-[python dictionary](./Group_Anagrams.md)
+  - [python dictionary](./Group_Anagrams.md)
 
 
 
