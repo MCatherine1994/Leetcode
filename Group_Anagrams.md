@@ -1,4 +1,5 @@
-#### **[Group Anagrams](https://leetcode.com/problems/group-anagrams/)**
+### **[Group Anagrams](https://leetcode.com/problems/group-anagrams/)**
+#### **[Problem Description]:**
 Given an array of strings, group anagrams together
 ```
 Input: ["eat", "tea", "tan", "ate", "nat", "bat"]
@@ -10,7 +11,7 @@ Output:
 ]
 ```
 
-Python  
+#### **[Python Solution]:**
 ```
 def groupAnagrams(strs):
     ans = collections.defaultdict(list)
