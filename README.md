@@ -8,6 +8,7 @@
 
 #### **Knowledge example:**
   - [python dictionary](./Group_Anagrams.md)
+  - [java hashmap](./Group_Anagrams.md)
 
 
 
