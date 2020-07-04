@@ -36,3 +36,25 @@ def groupAnagrams(strs):
     - "dict.values()" returns a list of all values
     - "dict.keys()" returns a list of all keys
     - "dict.items()" returns a list of (key, value) tuples
+
+
+### **Java Solution:**
+```
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        if (strs.length == 0) return new ArrayList();
+        Map<String, List> ans = new HashMap<String, List>();
+        for (String s : strs) {
+            char[] ca = s.toCharArray();
+            Arrays.sort(ca);
+            String key = String.valueOf(ca);
+            if (!ans.containsKey(key)) ans.put(key, new ArrayList());
+            ans.get(key).add(s);
+        }
+        return new ArrayList(ans.values());
+    }
+}
+```
+- [Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp) - The ArrayList class is a resizable array, while elements can be added and removed from an ArrayList whenever you want
+- [Java Map](http://tutorials.jenkov.com/java-collections/map.html), [Java HashMap](https://www.w3schools.com/java/java_hashmap.asp) - <data_type_of_the_key, data_type_of_the_value>
+- [toCharArray](https://www.geeksforgeeks.org/java-string-tochararray-example/) - convert the string to an character array; [String.valueOf](https://www.tutorialspoint.com/java/java_string_valueof.htm) - return the string representation of the char array argument
